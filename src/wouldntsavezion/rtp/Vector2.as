@@ -22,5 +22,13 @@ package wouldntsavezion.rtp {
 			y = -ox;
 			r = r == 0 ? 270 : r - 90;	
 		}
+		
+		public function clone():Vector2 {
+			return new Vector2(x, y);
+		}
+		
+		public function toString():String { 
+			return 'Vector2(' + x + ', ' + y + ')';
+		}
 	}
 }
